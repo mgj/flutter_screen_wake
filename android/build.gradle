@@ -29,3 +29,13 @@ android {
         minSdkVersion 16
     }
 }
+
+subprojects {
+    afterEvaluate { project ->
+        if (project.name == 'flutter_screen_wake') {
+            if (!project.plugins.hasPlugin('com.android.library')) {
+                project.plugins.apply('com.android.library')
+            }
+        }
+    }
+}

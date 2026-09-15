@@ -23,7 +23,7 @@ apply plugin: 'com.android.library'
 
 android {
     namespace "br.com.erickhaendel.flutter_screen_wake"
-    compileSdkVersion 30
+    compileSdkVersion 33
 
     defaultConfig {
         minSdkVersion 16
